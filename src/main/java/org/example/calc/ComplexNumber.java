@@ -1,6 +1,6 @@
 package org.example.calc;
 
-public class ComplexNumber {
+public class ComplexNumber implements Operation<ComplexNumber>{
     double realPart;
     double imaginaryPart;
     public ComplexNumber(double realPart, double imaginaryPart) {
@@ -14,5 +14,27 @@ public class ComplexNumber {
 
     public double getImaginaryPart() {
         return imaginaryPart;
+    }
+
+    @Override
+    public ComplexNumber add(ComplexNumber a, ComplexNumber b) {
+        double realPart = a.getRealPart() + b.getRealPart();
+        double imaginaryPart = a.getImaginaryPart() + b.getImaginaryPart();
+        return new ComplexNumber(realPart, imaginaryPart);
+    }
+
+    @Override
+    public double subtract() {
+        return 0;
+    }
+
+    @Override
+    public double div() {
+        return 0;
+    }
+
+    @Override
+    public double multiply() {
+        return 0;
     }
 }

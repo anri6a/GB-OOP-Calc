@@ -4,24 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8713824-b29c-4d1e-9503-096893088ff3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c:/temp/logs/app-debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c:/temp/logs/app-error.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c:/temp/logs/app-framework.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c:/temp/logs/app-info.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c:/temp/logs/app-perf.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c:/temp/logs/app-trace.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/calc/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/calc/CalculatorMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/calc/ComplexNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/calc/RationalNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+    <list default="true" id="a8713824-b29c-4d1e-9503-096893088ff3" name="Changes" comment="Simple calculator with ComplexNumber and RationalNumber">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/calc/Operation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/calc/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/calc/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/calc/CalculatorMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/calc/CalculatorMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/calc/ComplexNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/calc/ComplexNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/calc/RationalNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/calc/RationalNumber.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -92,6 +82,14 @@
       <option name="presentableId" value="Default" />
       <updated>1698229623274</updated>
     </task>
+    <task id="LOCAL-00001" summary="Simple calculator with ComplexNumber and RationalNumber">
+      <created>1698950270343</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698950270343</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -104,5 +102,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Simple calculator with ComplexNumber and RationalNumber" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simple calculator with ComplexNumber and RationalNumber" />
   </component>
 </project>

@@ -1,11 +1,11 @@
 package org.example.calc;
 
-public class RationalNumber {
+public class RationalNumber implements Operation<RationalNumber>{
     private int numerator;
-    private int denomerator;
+    private int denominator;
 
     public RationalNumber(int numerator, int denominator) {
-        this.denomerator = denominator;
+        this.denominator = denominator;
         this.numerator = numerator;
     }
 
@@ -14,14 +14,14 @@ public class RationalNumber {
     }
 
     public int getDenominator() {
-        return denomerator;
+        return denominator;
 
     }
 
     public void reduce() {
-        int gcd = greatestCommonDivisor(numerator, denomerator);
+        int gcd = greatestCommonDivisor(numerator, denominator);
         numerator /= gcd;
-        denomerator /= gcd;
+        denominator /= gcd;
     }
 
 
@@ -32,5 +32,27 @@ public class RationalNumber {
             a = temp;
         }
         return a;
+    }
+
+    @Override
+    public RationalNumber add(RationalNumber a, RationalNumber b) {
+        int numerator = a.getNumerator() * b.getDenominator() + b.getNumerator() * a.getDenominator();
+        int denominator = a.getDenominator() * b.getDenominator();
+        return new RationalNumber(numerator, denominator);
+    }
+
+    @Override
+    public double subtract() {
+        return 0;
+    }
+
+    @Override
+    public double div() {
+        return 0;
+    }
+
+    @Override
+    public double multiply() {
+        return 0;
     }
 }

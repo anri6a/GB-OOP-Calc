@@ -7,6 +7,11 @@ import java.util.Scanner;
 
 
 public class CalculatorMenu {
+    public CalculatorMenu(ComplexNumber complexNumber) {
+        this.complexNumber = complexNumber;
+    }
+
+    private ComplexNumber complexNumber;
     private static final Logger logger = LogManager.getLogger(CalculatorMenu.class);
 
     public static void main(String[] args) {
@@ -56,7 +61,7 @@ public class CalculatorMenu {
         switch (operation) {
             case 1:
                 logger.info("sum was successfully done");
-                result = Calculator.add(complex1, complex2);
+                result = ComplexNumber.(complex1, complex2);
                 break;
             case 2:
                 logger.info("subtract was successfully done");
@@ -109,7 +114,7 @@ public class CalculatorMenu {
         switch (operation) {
             case 1:
                 logger.info("sum was successfully done");
-                result = Calculator.add(rational1, rational2);
+                result = ComplexNumber. add(rational1, rational2);
                 break;
             case 2:
                 logger.info("subtract was successfully done");
