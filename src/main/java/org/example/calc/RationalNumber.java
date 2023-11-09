@@ -9,6 +9,10 @@ public class RationalNumber implements Operation<RationalNumber>{
         this.numerator = numerator;
     }
 
+    public RationalNumber() {
+
+    }
+
     public int getNumerator() {
         return numerator;
     }
@@ -42,17 +46,23 @@ public class RationalNumber implements Operation<RationalNumber>{
     }
 
     @Override
-    public double subtract() {
-        return 0;
+    public RationalNumber subtract(RationalNumber a, RationalNumber b) {
+        int numerator = a.getNumerator() * b.getDenominator() - b.getNumerator() * a.getDenominator();
+        int denominator = a.getDenominator() * b.getDenominator();
+        return new RationalNumber(numerator, denominator);
     }
 
     @Override
-    public double div() {
-        return 0;
+    public RationalNumber div(RationalNumber a, RationalNumber b) {
+        int numerator = a.getNumerator() * b.getDenominator();
+        int denominator = a.getDenominator() * b.getNumerator();
+        return new RationalNumber(numerator, denominator);
     }
 
     @Override
-    public double multiply() {
-        return 0;
+    public RationalNumber multiply(RationalNumber a, RationalNumber b) {
+        int numerator = a.getNumerator() * b.getNumerator();
+        int denominator = a.getDenominator() * b.getDenominator();
+        return new RationalNumber(numerator, denominator);
     }
 }

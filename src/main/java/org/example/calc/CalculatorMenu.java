@@ -7,11 +7,7 @@ import java.util.Scanner;
 
 
 public class CalculatorMenu {
-    public CalculatorMenu(ComplexNumber complexNumber) {
-        this.complexNumber = complexNumber;
-    }
 
-    private ComplexNumber complexNumber = new ComplexNumber();
     private static final Logger logger = LogManager.getLogger(CalculatorMenu.class);
 
     public static void main(String[] args) {
@@ -57,23 +53,24 @@ public class CalculatorMenu {
         System.out.print("your choice: ");
         int operation = scanner.nextInt();
 
-        ComplexNumber result = null;
+//        ComplexNumber result = null;
+        ComplexNumber result = new ComplexNumber();
         switch (operation) {
             case 1:
                 logger.info("sum was successfully done");
-                result = new ComplexNumber (complex1, complex2);
+                result =result.add (complex1, complex2);
                 break;
             case 2:
                 logger.info("subtract was successfully done");
-                result = Calculator.subtract(complex1, complex2);
+                result = result.subtract(complex1, complex2);
                 break;
             case 3:
                 logger.info("multiply was successfully done");
-                result = Calculator.multiply(complex1, complex2);
+                result = result.multiply(complex1, complex2);
                 break;
             case 4:
                 logger.info("div was successfully done");
-                result = Calculator.div(complex1, complex2);
+                result = result.div(complex1, complex2);
                 break;
             default:
                 logger.error("wrong operation choice");
@@ -110,23 +107,24 @@ public class CalculatorMenu {
         System.out.print("your choice: ");
         int operation = scanner.nextInt();
 
-        RationalNumber result = null;
+//        RationalNumber result = null;
+        RationalNumber result = new RationalNumber();
         switch (operation) {
             case 1:
                 logger.info("sum was successfully done");
-                result = ComplexNumber. add(rational1, rational2);
+                result = result.add(rational1, rational2);
                 break;
             case 2:
                 logger.info("subtract was successfully done");
-                result = Calculator.subtract(rational1, rational2);
+                result = result.subtract(rational1, rational2);
                 break;
             case 3:
                 logger.info("multiply was successfully done");
-                result = Calculator.multiply(rational1, rational2);
+                result = result.multiply(rational1, rational2);
                 break;
             case 4:
                 logger.info("div was successfully done");
-                result = Calculator.div(rational1, rational2);
+                result = result.div(rational1, rational2);
                 break;
             default:
                 logger.error("wrong operation choice");
