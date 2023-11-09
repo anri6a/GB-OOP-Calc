@@ -11,7 +11,7 @@ public class CalculatorMenu {
         this.complexNumber = complexNumber;
     }
 
-    private ComplexNumber complexNumber;
+    private ComplexNumber complexNumber = new ComplexNumber();
     private static final Logger logger = LogManager.getLogger(CalculatorMenu.class);
 
     public static void main(String[] args) {
@@ -61,7 +61,7 @@ public class CalculatorMenu {
         switch (operation) {
             case 1:
                 logger.info("sum was successfully done");
-                result = ComplexNumber.(complex1, complex2);
+                result = new ComplexNumber (complex1, complex2);
                 break;
             case 2:
                 logger.info("subtract was successfully done");

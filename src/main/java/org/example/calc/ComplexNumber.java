@@ -3,6 +3,10 @@ package org.example.calc;
 public class ComplexNumber implements Operation<ComplexNumber>{
     double realPart;
     double imaginaryPart;
+
+//    public ComplexNumber() {
+//    }
+
     public ComplexNumber(double realPart, double imaginaryPart) {
         this.realPart = realPart;
         this.imaginaryPart = imaginaryPart;
